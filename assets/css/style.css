@@ -20,13 +20,15 @@ body {
 .skill-icons {
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .skill-icons li {
     display: inline;
-    margin-right: 65px;
+    margin: 0px 60px 0px auto;
     color: #343a40;
     font-size: 62px;
+    text-align: center;
 }
 
 .jumbotron {
