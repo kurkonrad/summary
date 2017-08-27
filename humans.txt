@@ -2,7 +2,7 @@
 
 /* TEAM */
  Original author: Konrad Kur
- Contact: konrad.kur [at] gmail..pl
+ Contact: konrad.kur [at] gmail.pl
  From: Stargard, Poland
 
 /* SITE */
