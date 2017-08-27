@@ -63,8 +63,9 @@ body {
     filter: grayscale(0%);
 }
 
-.email {
-    font-size: 18px;
-    letter-spacing: 4px;
-    font-weight: bold;
+footer {
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
