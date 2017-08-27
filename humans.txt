@@ -1,0 +1,12 @@
+# -*- coding: utf8 -*-
+
+/* TEAM */
+ Original author: Konrad Kur
+ Contact: konrad.kur [at] gmail..pl
+ From: Stargard, Poland
+
+/* SITE */
+ Language: Polish / polski
+ Doctype: HTML5
+ IDE: pycharm on Linux
+ Software: HTML, CSS, boostrap, jquery, git
