@@ -37,3 +37,23 @@ body {
     border-radius: 0;
     background-color: #343a40;
 }
+
+.workwith {
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.workwith li {
+    display: inline;
+    margin: 0px 35px 0px 35px;
+    color: #343a40;
+    font-size: 62px;
+    text-align: center;
+}
+
+.workwith li img {
+    width: 100px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
