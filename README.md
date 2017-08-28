@@ -1,7 +1,3 @@
-**konrad kur**
-
-**architect / senior software developer**
-
 ```python
 #!/usr/bin/python3
 # enums.py
