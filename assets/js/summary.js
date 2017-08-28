@@ -1,4 +1,5 @@
 hljs.initHighlightingOnLoad();
+jQuery.noConflict();
 
 /**
  * JavaScript Client Detection
