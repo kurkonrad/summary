@@ -9,7 +9,7 @@ footer { padding: 10px; font-size: 11px; letter-spacing: 1px; margin-bottom: 15p
 /* hljs */
 .hljs { background: none !important; }
 
-/* tawerna */
+/* summary */
 .about_guest { border: none; color: #f8f8f8; }
 .about_guest:hover { background: none; text-decoration: underline; }
 
