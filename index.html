@@ -27,8 +27,9 @@
       </div>
     </nav>
     <div class="container">
-      <h1 class="uppercase">konrad kur</h1>
-      <h2 class="uppercase">architect / senior python developer</h2><hr />
+      <h1 class="uppercase"><strong>konrad kur</strong></h1>
+      <h2 class="uppercase">architect / senior python developer</h2>
+      <hr />
       <ul class="skill-icons">
         <li class="ion-social-python"></li>
         <li class="ion-social-javascript"></li>
@@ -45,20 +46,20 @@
       <div class="container">
       <div class="row">
         <div class="col-md-4 text-center">
-          <h2>web applications</h2>
+          <h2 class="uppercase">web<br />applications</h2>
         </div>
         <div class="col-md-4 text-center">
-          <h2>business software</h2>
+          <h2 class="uppercase">mobile<br />development</h2>
         </div>
         <div class="col-md-4 text-center">
-          <h2>mobile development</h2>
+          <h2 class="uppercase">business<br />software</h2>
         </div>
       </div><hr />
 <pre><code class="python">#!/usr/bin/python3
-import b2b
+# enums.py
 import datetime
 
-response = {
+about_kkur = {
   'full_name': 'Konrad Kur',
   'from': 'Stargard, Poland',
   'date_birth': datetime.date(1990, 04, 17),
@@ -69,19 +70,10 @@ response = {
   'github_account': 'https://github.com/kurkonrad/',
   'bitbucket_account': 'https://bitbucket.org/kurkonrad/',
   'availability': True
-}
-
-if response['availability'] is True:
-  response = [(k, v) for k, v in response.items()]
-  contract = b2b.new_contract(response)
-
-  if contract['success'] is True:
-    b2b.final_contract() # your company will gain</code></pre>
-    </div>
-    <div class="container">
-      <hr />
+}</code></pre>
     </div>
     <div class="container text-center">
+      <hr />
       <ul class="workwith">
         <li><a href="https://pl.asseco.com/" title="Asseco Poland SA" target="_blank"><img src="assets/icons/unizeto.jpg" alt="Unizeto Technologies SA"/></a></li>
         <li><a href="http://www.red-sky.com" target="_blank"><img src="assets/icons/redsky.jpg" alt="Red Sky Sp. z o.o."/></a></li>
@@ -90,6 +82,31 @@ if response['availability'] is True:
         <li><a href="http://www.rcl.gov.pl/" title="" target="_blank"><img src="assets/icons/rcl.png" alt="Rządowe Centrum Legislacji" /></a></li>
         <li><a href="https://www.krus.gov.pl" title="KRUS" target="_blank"><img src="assets/icons/krus.png" alt="KRUS" /></a></li>
       </ul><hr />
+    </div>
+    <div class="container">
+<pre><code class="python">#!/usr/bin/python3
+# summary.py
+import b2b
+from enums import about_kkur
+
+def request_contract(d):
+  if d['availability'] is True:
+    d = [(k, v) for k, v in d.items()]
+    c = b2b.new_contract(d)
+
+    if c['success'] is True:
+      return b2b.final_contract(c) # your company will gain
+
+  return False
+
+
+if __name__ == '__main__':
+  new_contract = request_contract(about_kkur)
+
+  if new_contract is True:
+    print('Success, Konrad Kur is availability for your company!')
+</code></pre>
+      <hr />
     </div>
     <footer class="footer">
       <div class="container">

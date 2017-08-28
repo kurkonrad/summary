@@ -10,7 +10,7 @@ footer { padding: 10px; font-size: 11px; letter-spacing: 1px; margin-bottom: 15p
 .hljs { background: none !important; }
 
 /* summary */
-.uppercase { text-transform: uppercase; }
+.uppercase { text-transform: lowercase; letter-spacing: 1.5px; }
 .about_guest { border: none; color: #f8f8f8; }
 .about_guest:hover { background: none; text-decoration: underline; }
 
