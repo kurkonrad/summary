@@ -188,18 +188,16 @@ jQuery.noConflict();
     };
 }(this));
 
-$(document).ready(function() {
-    var about_guest = $('.about_guest');
-    about_guest.click(function() {
-        alert(
-            'OS: ' + jscd.os +' '+ jscd.osVersion + '\n' +
-            'Browser: ' + jscd.browser +' '+ jscd.browserMajorVersion +
-              ' (' + jscd.browserVersion + ')\n' +
-            'Mobile: ' + jscd.mobile + '\n' +
-            'Flash: ' + jscd.flashVersion + '\n' +
-            'Cookies: ' + jscd.cookies + '\n' +
-            'Screen Size: ' + jscd.screen + '\n\n' +
-            'Full User Agent: ' + navigator.userAgent
-        );
-    });
+var about_guest = $('.about_guest');
+about_guest.click(function() {
+    alert(
+        'OS: ' + jscd.os +' '+ jscd.osVersion + '\n' +
+        'Browser: ' + jscd.browser +' '+ jscd.browserMajorVersion +
+          ' (' + jscd.browserVersion + ')\n' +
+        'Mobile: ' + jscd.mobile + '\n' +
+        'Flash: ' + jscd.flashVersion + '\n' +
+        'Cookies: ' + jscd.cookies + '\n' +
+        'Screen Size: ' + jscd.screen + '\n\n' +
+        'Full User Agent: ' + navigator.userAgent
+    );
 });
