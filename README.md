@@ -6,7 +6,7 @@ import datetime
 about_kkur = {
   'full_name': 'Konrad Kur',
   'from': 'Stargard, Poland',
-  'date_birth': datetime.date(1990, 04, 17),
+  'date_birth': datetime.date(1990, 4, 17),
   'skill_keywords': ['Python', 'Django', 'Flask', 'Linux', 'git', 'http',
                       'REST', 'PostgreSQL', 'MySQL', 'wsgi', 'JavaScript'],
   'phone_number': '+48 609 341 608',
