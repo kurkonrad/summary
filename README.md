@@ -1,3 +1,5 @@
+[download my cv](https://kurkonrad.github.io/summary/assets/Konrad_Kur_CV.pdf)
+
 ```python
 #!/usr/bin/python3
 # enums.py
@@ -40,5 +42,3 @@ if __name__ == '__main__':
   if new_contract is True:
     print('Success, Konrad Kur is availability for your company!')
 ```
-
-[download my cv](https://kurkonrad.github.io/summary/assets/Konrad_Kur_CV.pdf)
