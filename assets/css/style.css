@@ -30,4 +30,5 @@ footer { padding: 10px; font-size: 11px; letter-spacing: 1px; margin-bottom: 15p
     .social-icons { padding: 10px; margin: 0; }
     .social-icons li { display: inline !important; margin-right: 10px; }
     .social-icons li a { color: #f8f8f8; font-size: 42px; }
+    .skill-icons li { padding: 0 15px; display: inline; color: #343a40; font-size: 62px; text-align: center; }
 }
