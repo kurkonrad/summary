@@ -15,13 +15,13 @@ footer { padding: 10px; font-size: 11px; letter-spacing: 1px; margin-bottom: 15p
 .about_guest:hover { background: none; text-decoration: underline; }
 
 .social-icons { padding: 0; margin: 0; }
-.social-icons li { display: inline; }
+.social-icons li { display: inline; margin-right: 10px; }
 .social-icons li a { color: #f8f8f8; font-size: 22px; }
 
 .skill-icons { padding: 0; margin: 0; text-align: center; }
 .skill-icons li { display: inline; margin: 0px 35px; color: #343a40; font-size: 62px;text-align: center; }
 
 .workwith { padding: 0; margin: 0 0 20px 0; text-align: center; }
-.workwith li { display: inline; color: #343a40; font-size: 62px; text-align: center; }
+.workwith li { display: inline; margin: 0px 35px 0px 35px; color: #343a40; font-size: 62px; text-align: center; }
 .workwith li img { width: 100px; -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); }
 .workwith li img:hover { -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */ filter: grayscale(0%); }
