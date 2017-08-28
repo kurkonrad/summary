@@ -55,9 +55,11 @@
         </div>
       </div><hr />
 <pre><code class="python">#!/usr/bin/python3
+import b2b
 import datetime
 
 response = {
+  'full_name': 'Konrad Kur',
   'from': 'Stargard, Poland',
   'date_birth': datetime.date(1990, 04, 17),
   'skill_keywords': ['Python', 'Django', 'Flask', 'Linux', 'git', 'http',
@@ -67,7 +69,14 @@ response = {
   'github_account': 'https://github.com/kurkonrad/',
   'bitbucket_account': 'https://bitbucket.org/kurkonrad/',
   'availability': True
-}</code></pre>
+}
+
+if response['availability'] is True:
+  response = [(k, v) for k, v in response.items()]
+  contract = b2b.new_contract(response)
+
+  if contract['success'] is True:
+    b2b.final_contract() # your company will gain</code></pre>
     </div>
     <div class="container">
       <hr />
