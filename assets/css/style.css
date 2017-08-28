@@ -1,71 +1,26 @@
-body {
-  padding-top: 5rem;
-}
+/* common */
+body { padding-top: 5rem; }
+footer { padding: 10px; font-size: 11px; letter-spacing: 1px; margin-bottom: 15px; }
 
-.social-icons {
-    padding: 0;
-    margin: 0;
-}
+/* boostrap 4 */
+.jumbotron { height: 1px; padding: 0; border-radius: 0; background-color: #343a40; }
 
-.social-icons li {
-    display: inline;
-    margin-right: 10px;
-}
 
-.social-icons li a {
-    color: #f8f8f8;
-    font-size: 22px;
-}
+/* hljs */
+.hljs { background: none !important; }
 
-.skill-icons {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
+/* tawerna */
+.about_guest { border: none; color: #f8f8f8; }
+.about_guest:hover { background: none; text-decoration: underline; }
 
-.skill-icons li {
-    display: inline;
-    margin: 0px 35px 0px 35px;
-    color: #343a40;
-    font-size: 62px;
-    text-align: center;
-}
+.social-icons { padding: 0; margin: 0; }
+.social-icons li { display: inline; margin-right: 10px; }
+.social-icons li a { color: #f8f8f8; font-size: 22px; }
 
-.jumbotron {
-    height: 1px;
-    padding: 0;
-    border-radius: 0;
-    background-color: #343a40;
-}
+.skill-icons { padding: 0; margin: 0; text-align: center; }
+.skill-icons li { display: inline; margin: 0px 35px; color: #343a40; font-size: 62px;text-align: center; }
 
-.workwith {
-    padding: 0;
-    margin: 0 0 20px 0;
-    text-align: center;
-}
-
-.workwith li {
-    display: inline;
-    margin: 0px 35px 0px 35px;
-    color: #343a40;
-    font-size: 62px;
-    text-align: center;
-}
-
-.workwith li img {
-    width: 100px;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-
-.workwith li img:hover {
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
-}
-
-footer {
-    padding: 10px;
-    font-size: 11px;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
+.workwith { padding: 0; margin: 0 0 20px 0; text-align: center; }
+.workwith li { display: inline; margin: 0px 35px 0px 35px; color: #343a40; font-size: 62px; text-align: center; }
+.workwith li img { width: 100px; -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); }
+.workwith li img:hover { -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */ filter: grayscale(0%); }
