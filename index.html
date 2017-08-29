@@ -24,9 +24,9 @@
           <li><a href="https://github.com/kurkonrad" class="ion-social-github" title="Konrad Kur - Architect / Senior Python Developer github account"></a></li>
           <li><a href="https://www.linkedin.com/in/konrad-kur-66401b64/" class="ion-social-linkedin" title="Konrad Kur - Architect / Senior Python Developer linkedin account"></a></li>
         </ul>
-        <!--<div class="mt-2 mt-md-0">
+        <div class="mt-2 mt-md-0">
           <a class="btn btn-outline-success my-2 my-sm-0 about_guest" href="#">$ uname -a</a>
-        </div>-->
+        </div>
       </div>
     </nav>
     <div class="container">
@@ -97,7 +97,7 @@ def request_contract(d):
         d = [(k, v) for k, v in d.items()]
         contract = b2b.new_contract(d)
 
-        if c['success'] is True:
+        if contract['success'] is True:
             return b2b.final_contract(contract) # your company will gain
 
     return False
