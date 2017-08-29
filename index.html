@@ -25,7 +25,7 @@
           <li><a href="https://www.linkedin.com/in/konrad-kur-66401b64/" class="ion-social-linkedin" title="Konrad Kur - Architect / Senior Python Developer linkedin account"></a></li>
         </ul>
         <div class="mt-2 mt-md-0">
-          <a class="btn btn-outline-success my-2 my-sm-0 about_guest" href="#">$ uname -a</a>
+          <span class="text-muted">@require_http_methods(['GET', 'POST'])</span>
         </div>
       </div>
     </nav>
@@ -104,9 +104,9 @@ def request_contract(d):
 
 
 if __name__ == '__main__':
-    new_contract = request_contract(about_kkur)
+    response = request_contract(about_kkur)
 
-    if new_contract is True:
+    if response is True:
         print('Success, Konrad Kur is available for your company!')
 </code></pre>
       <hr />
