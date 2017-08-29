@@ -95,10 +95,10 @@ from enums import about_kkur
 def request_contract(d):
     if d['availability'] is True:
         d = [(k, v) for k, v in d.items()]
-        c = b2b.new_contract(d)
+        contract = b2b.new_contract(d)
 
         if c['success'] is True:
-            return b2b.final_contract(c) # your company will gain
+            return b2b.final_contract(contract) # your company will gain
 
     return False
 
