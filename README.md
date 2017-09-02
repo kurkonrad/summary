@@ -1,5 +1,4 @@
-##### github-pages use to hosted my personal website
-
+# about me
 [live demo](https://kurkonrad.github.io/summary/)
 
 [download my cv](https://kurkonrad.github.io/summary/assets/Konrad_Kur_CV.pdf)
@@ -10,16 +9,16 @@
 import datetime
 
 about_kkur = {
-  'full_name': 'Konrad Kur',
-  'from': 'Stargard, Poland',
-  'date_birth': datetime.date(1990, 4, 17),
-  'skill_keywords': ['Python', 'Django', 'Flask', 'Linux', 'git', 'http',
-                      'REST', 'PostgreSQL', 'MySQL', 'wsgi', 'JavaScript'],
-  'phone_number': '+48 609 341 608',
-  'email': 'konrad.kur@gmail.com',
-  'github_account': 'https://github.com/kurkonrad/',
-  'bitbucket_account': 'https://bitbucket.org/kurkonrad/',
-  'availability': True
+    'full_name': 'Konrad Kur',
+    'from': 'Stargard, Poland',
+    'birth_date': datetime.date(1990, 4, 17),
+    'skill_keywords': ['Python', 'Django', 'Flask', 'Linux', 'git', 'http',
+                       'REST', 'PostgreSQL', 'MySQL', 'wsgi', 'JavaScript'],
+    'phone_number': '+48 609 341 608',
+    'email': 'konrad.kur@gmail.com',
+    'github_account': 'https://github.com/kurkonrad/',
+    'bitbucket_account': 'https://bitbucket.org/kurkonrad/',
+    'availability': True
 }
 ```
 
@@ -30,19 +29,29 @@ import b2b
 from enums import about_kkur
 
 def request_contract(d):
-  if d['availability'] is True:
-    d = [(k, v) for k, v in d.items()]
-    c = b2b.new_contract(d)
+    if d['availability'] is True:
+        d = [(k, v) for k, v in d.items()]
+        contract = b2b.new_contract(d)
 
-    if c['success'] is True:
-      return b2b.final_contract(c) # your company will gain
+        if contract['success'] is True:
+            return b2b.final_contract(contract) # your company will gain
 
-  return False
+    return False
 
 
 if __name__ == '__main__':
-  new_contract = request_contract(about_kkur)
+    response = request_contract(about_kkur)
 
-  if new_contract is True:
-    print('Success, Konrad Kur is availability for your company!')
+    if response is True:
+        print('Success, Konrad Kur is available for your company!')
+```
+
+# build project
+```shell
+$ npm install
+$ gulp build
+```
+# start project
+```shell
+$ gulp runserver
 ```
