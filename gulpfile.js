@@ -14,7 +14,7 @@ gulp.task('minify-css', function () {
 
 gulp.task('minify-js', function () {
     gulp.src('assets/js/summary.js')
-    .pipe(rename('summary.min.css'))
+    .pipe(rename('summary.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js/'));
 });
