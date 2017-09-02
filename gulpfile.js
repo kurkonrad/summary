@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     minifyCss = require('gulp-minify-css'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    connect = require('gulp-connect');
 
 gulp.task('minify-css', function () {
     gulp.src('assets/css/style.css')
@@ -15,3 +16,7 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('build', ['minify-css', 'minify-js']);
+
+gulp.task('runserver', function() {
+    connect.server();
+});
