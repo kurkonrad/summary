@@ -1,9 +1,11 @@
+# about me
 [live demo](https://kurkonrad.github.io/summary/)
 
 [download my cv](https://kurkonrad.github.io/summary/assets/Konrad_Kur_CV.pdf)
 
 ```python
 #!/usr/bin/python3
+# enums.py
 import datetime
 
 about_kkur = {
@@ -22,6 +24,7 @@ about_kkur = {
 
 ```python
 #!/usr/bin/python3
+# summary.py
 import b2b
 from enums import about_kkur
 
