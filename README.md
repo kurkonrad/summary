@@ -53,5 +53,5 @@ $ gulp build
 ```
 # start project
 ```shell
-$ gulp runserver
+$ gulp dev
 ```
