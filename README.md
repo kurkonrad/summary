@@ -48,3 +48,7 @@ if __name__ == '__main__':
 $ npm install
 $ gulp build
 ```
+# start project
+```shell
+$ gulp runserver
+```
