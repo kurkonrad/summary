@@ -46,3 +46,19 @@ _testmain.go
 #*.png
 #*.jpeg
 *.psd
+
+# gulp
+
+.DS_Store
+*.log
+node_modules
+build
+*.node
+components
+coverage
+*.orig
+.idea
+sandbox
+test/out-fixtures/*
+test/watch-*.txt
+gulp.1
