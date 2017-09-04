@@ -1,7 +1,7 @@
 # about me
 [live demo](https://kurkonrad.github.io/summary/)
 
-[download my cv](https://kurkonrad.github.io/summary/assets/Konrad_Kur_CV.pdf)
+[download my cv](https://kurkonrad.github.io/summary/assets/konrad_kur_cv.pdf)
 
 ```python
 #!/usr/bin/python3
@@ -45,7 +45,6 @@ if __name__ == '__main__':
     if response is True:
         print('Success, Konrad Kur is available for your company!')
 ```
-
 # build project
 ```shell
 $ npm install
@@ -53,5 +52,11 @@ $ gulp build
 ```
 # start project
 ```shell
-$ gulp runserver
+$ gulp dev
+```
+# build cv
+```shell
+$ sudo apt install wkhtmltopdf
+$ cd summary
+$ wkhtmltopdf templates/cv.html assets/konrad_kur_cv.pdf
 ```
