@@ -45,7 +45,6 @@ if __name__ == '__main__':
     if response is True:
         print('Success, Konrad Kur is available for your company!')
 ```
-
 # build project
 ```shell
 $ npm install
@@ -54,4 +53,10 @@ $ gulp build
 # start project
 ```shell
 $ gulp dev
+```
+# build cv
+```shell
+$ sudo apt install wkhtmltopdf
+$ cd summary
+$ wkhtmltopdf templates/cv.html assets/konrad_kur_cv.pdf
 ```
