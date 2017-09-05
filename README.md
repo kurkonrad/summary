@@ -58,5 +58,5 @@ $ gulp dev
 ```shell
 $ sudo apt install wkhtmltopdf
 $ cd summary
-$ wkhtmltopdf templates/cv.html assets/konrad_kur_cv.pdf
+$ wkhtmltopdf templates/konrad_kur_cv.html dist/konrad_kur_cv.pdf
 ```
