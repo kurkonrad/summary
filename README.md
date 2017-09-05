@@ -1,7 +1,7 @@
 # about me
 [live demo](https://kurkonrad.github.io/summary/)
 
-[download my cv](https://kurkonrad.github.io/summary/assets/konrad_kur_cv.pdf)
+[download my cv](https://kurkonrad.github.io/summary/dist/konrad_kur_cv.pdf)
 
 ```python
 #!/usr/bin/python3
