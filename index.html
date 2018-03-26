@@ -56,11 +56,11 @@
         </div>
       </div><br />
 <pre><code class="python">#!/usr/bin/python3
-# enums.py
+# fixtures.py
 
 import datetime
 
-about_kkur = {
+developers = [{
     'full_name': 'Konrad Kur',
     'from': 'Stargard, Poland',
     'birth_date': datetime.date(1990, 4, 17),
@@ -71,7 +71,13 @@ about_kkur = {
     'github': '<a href="https://github.com/kurkonrad/">https://github.com/kurkonrad/</a>',
     'bitbucket': '<a href="https://bitbucket.org/kurkonrad/">https://bitbucket.org/kurkonrad/</a>',
     'availability': False
-}</code></pre>
+}]
+
+
+def get_developer_by_email(email):
+    dev = [dev for dev in developers if dev['email'] == email]
+    return bool(dev)
+</code></pre>
     </div>
     <div class="container text-center">
       <br /><h2>they chose</h2><hr />
@@ -88,22 +94,23 @@ about_kkur = {
 <pre><code class="python">#!/usr/bin/python3
 
 import b2b
-from enums import about_kkur
+from fixtures import get_developer_by_email
 
 def request_contract(cv):
     if cv['availability'] is True:
-        contract = b2b.new_contract(cv)
+        new_contract = b2b.new_contract(cv)
 
-        if contract['success'] is True:
-            return b2b.final_contract(contract)  # your company will gain
+        if new_contract['success'] is True:
+            return b2b.final_contract(new_contract)  # your company will gain
 
     return False
 
 
 if __name__ == '__main__':
-    response = request_contract(about_kkur)
+    contract = get_developer_by_email('konradkur@gmail.com')
+    contract = request_contract(contract)
 
-    if response is True:
+    if contract is True:
         print('Success, Konrad Kur is available for your company!')
 </code></pre><br />
     </div>
