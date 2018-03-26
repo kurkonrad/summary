@@ -13,6 +13,7 @@
     <link href="dist/css/style.min.css?version=0.1" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/hljs.min.css">
     <link type="text/plain" rel="author" href="humans.txt" />
+    <link rel="stylesheet" href="assets/devicon/devicon.min.css">
   </head>
   <body>
    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -29,17 +30,18 @@
     </nav>
     <div class="container">
       <h1 class="lowercase"><strong>konrad kur</strong></h1>
-      <h2 class="lowercase">architect / full-stack developer</h2>
+      <h2 class="lowercase">architect / full-stack developer</h2><br />
       <ul class="skill-icons text-center">
-        <li class="ion-social-python"></li>
-        <li class="ion-social-javascript"></li>
-        <li class="ion-social-angular"></li>
-        <li class="ion-social-html5"></li>
-        <li class="ion-social-css3"></li>
-        <li class="ion-social-sass"></li>
-        <li class="ion-social-android"></li>
-        <li class="ion-social-tux"></li>
-        <li class="ion-social-apple"></li>
+        <li class="cbp-ig-icon devicon-python-plain"></li>
+        <li class="cbp-ig-icon devicon-php-plain"></li>
+        <li class="cbp-ig-icon devicon-javascript-plain"></li>
+	<li class="cbp-ig-icon devicon-html5-plain"></li>
+	<li class="cbp-ig-icon devicon-sass-original"></li>
+        <li class="cbp-ig-icon devicon-postgresql-plain"></li>
+        <li class="cbp-ig-icon devicon-mysql-plain"></li>
+        <li class="cbp-ig-icon devicon-nginx-original"></li>
+        <li class="cbp-ig-icon devicon-linux-plain"></li>
+        <li class="cbp-ig-icon devicon-vim-plain"></li>
       </ul>
     <hr />
       <div class="row">
@@ -55,6 +57,7 @@
       </div><br />
 <pre><code class="python">#!/usr/bin/python3
 # enums.py
+
 import datetime
 
 about_kkur = {
@@ -63,10 +66,10 @@ about_kkur = {
     'birth_date': datetime.date(1990, 4, 17),
     'skill_keywords': ['Python', 'Django', 'Flask', 'Linux', 'git', 'http',
                        'REST', 'PostgreSQL', 'MySQL', 'wsgi', 'JavaScript'],
-    'phone_number': '<a href="tel:+48609341608">+48 609 341 608</a>',
+    'phone_number': '<a href="tel:+48609341608">+48 ‭572 598 320‬</a>',
     'email': '<a href="mailto:konrad.kur@gmail.com">konrad.kur@gmail.com</a>',
-    'github_account': '<a href="https://github.com/kurkonrad/">https://github.com/kurkonrad/</a>',
-    'bitbucket_account': '<a href="https://bitbucket.org/kurkonrad/">https://bitbucket.org/kurkonrad/</a>',
+    'github': '<a href="https://github.com/kurkonrad/">https://github.com/kurkonrad/</a>',
+    'bitbucket': '<a href="https://bitbucket.org/kurkonrad/">https://bitbucket.org/kurkonrad/</a>',
     'availability': False
 }</code></pre>
     </div>
@@ -83,15 +86,15 @@ about_kkur = {
     </div>
     <div class="container">
 <pre><code class="python">#!/usr/bin/python3
-# summary.py
+
 import b2b
 from enums import about_kkur
 
-def request_contract(d):
-    if d['availability']:
-        contract = b2b.new_contract(d)
+def request_contract(cv):
+    if cv['availability'] is True:
+        contract = b2b.new_contract(cv)
 
-        if contract['success']:
+        if contract['success'] is True:
             return b2b.final_contract(contract)  # your company will gain
 
     return False

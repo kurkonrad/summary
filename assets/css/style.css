@@ -56,6 +56,7 @@ footer {
 .social-icons li {
     padding: 0 10px;
     display: inline;
+    font-size: 6px;
 }
 
 .social-icons li a {
@@ -66,7 +67,7 @@ footer {
 .skill-icons li, .workwith li {
     display: inline;
     color: #343a40;
-    font-size: 62px;
+    font-size: 44px;
     text-align: center;
 }
 
