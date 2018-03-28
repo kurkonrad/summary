@@ -76,8 +76,7 @@ developers = [{
 
 
 def get_developer_by_email(email):
-    dev = [dev for dev in developers if dev['email'] == email]
-    return dev
+    return [dev for dev in developers if dev['email'] == email]
 </code></pre>
       </div>
       <div class="container text-center">
