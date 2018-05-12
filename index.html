@@ -65,7 +65,7 @@ developers = [{
     'full_name': 'Konrad Kur',
     'from': 'Stargard, Poland',
     'birth_date': date(1990, 4, 17),
-    'main_skills': ['Python', 'JavaScript', 'Django', 'Flask', 'http',
+    'main_skills': ['Python', 'JavaScript', 'Django', 'Flask', 'http', 'react', 'AWS',
                     'PostgreSQL', 'ExtJS', 'QT4', 'Algorithms', 'Linux', 'vim'],
     'phone_number': '<a href="tel:+48609341608">+48 ‭572 598 320‬</a>',
     'email': '<a href="mailto:konrad.kur@gmail.com">konrad.kur@gmail.com</a>',
@@ -84,12 +84,12 @@ def get_developer_by_email(email):
          <h2>they chose</h2>
          <hr />
          <ul class="workwith">
-            <li><a href="https://www.idosell.com/pl/shop/" title="IAI-Shop.com | Oprogramowanie sklepu internetowego szyte na miarę"><img src="assets/theychose/iai-shop.jpg" alt="IAI-Shop.com | Oprogramowanie sklepu internetowego szyte na miarę" /></a>
-            <li><a href="https://pl.asseco.com/" title="Asseco Data Systems"><img src="assets/theychose/asseco.png" alt="Asseco Data Systems" /></a>
+            <li><a href="http://datomik.com/" title="Datomik Oy"><img src="assets/theychose/datomikoy.jpg" alt="Datomik Oy" /></a></li>
             <li><a href="http://www.red-sky.com" title="Red Sky - sky is no limit"><img src="assets/theychose/redsky.jpg" alt="Red Sky - sky is no limit"/></a></li>
+            <li><a href="http://konkurs.michelin.pl" title="Michelin Leadership Program"><img src="assets/theychose/michelin.png" alt="Michelin Leadership Program"/></a></li>
+           <li><a href="http://www.web-car.pl/" title="web-car professional system for tracking your vehicle"><img src="assets/theychose/webcar.png" alt="web-car professional system for tracking your vehicle" /></a></li>
             <li><a href="http://www.worlddata.io" title="World Data Lab is a predictive analytics social enterprise registered in Austria. We build granular income and demographic forecasting tools aimed at delivering insights to everyone."><img src="assets/theychose/wdl.png" alt="World Data Lab is a predictive analytics social enterprise registered in Austria. We build granular income and demographic forecasting tools aimed at delivering insights to everyone." /></a></li>
-            <li><a href="http://konkurs.michelin.pl" title="Michelin Leadership Program"><img src="assets/theychose/michelin.png" alt="Michelin Leadership Program"/></a>
-            <li><a href="http://www.web-car.pl/" title="web-car professional system for tracking your vehicle"><img src="assets/theychose/webcar.png" alt="web-car professional system for tracking your vehicle" /></a></li>
+            <li><a href="https://pl.asseco.com/" title="Asseco Data Systems"><img src="assets/theychose/asseco.png" alt="Asseco Data Systems" /></a></li>
          </ul>
          <hr />
       </div>
@@ -140,7 +140,7 @@ if __name__ == '__main__':
       <script>
          hljs.initHighlightingOnLoad();
 
-         var cmd = [
+         const cmd = [
            null,
            'git branch',
            'git pull',
@@ -162,9 +162,9 @@ if __name__ == '__main__':
            'shutdown now -h'
          ];
          
-         var gitflow = $('#gitflow'),
-             command = 1;
-         
+         let command = 1;
+         const gitflow = $('#gitflow');
+
          setInterval(function() {
            if (command === cmd.length) {
              return clearInterval();
