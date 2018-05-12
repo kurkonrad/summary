@@ -140,7 +140,8 @@ if __name__ == '__main__':
       <script>
          hljs.initHighlightingOnLoad();
 
-         const cmd = [
+         const gitflow = $('#gitflow'),
+             cmd = [
            null,
            'git branch',
            'git pull',
@@ -163,7 +164,6 @@ if __name__ == '__main__':
          ];
          
          let command = 1;
-         const gitflow = $('#gitflow');
 
          setInterval(function() {
            if (command === cmd.length) {
